@@ -2,7 +2,9 @@ library(BiocManager)
 library(STRINGdb)
 library(igraph)
 library(ggplot2)
-library(EBImage)
+library(linkcomm)
+
+setwd("C:/Users/Usuario/OneDrive/Universidad/Curso 4/1º Cuatrimestre/Biología de Sistemas/Proyecto Sars-CoV2")
 
 string_db <- STRINGdb$new(
   version="11",
@@ -10,18 +12,22 @@ string_db <- STRINGdb$new(
   score_threshold=400,
   input_directory="")
 
-#Sars-Cov2 Network
-img1 = readImage("string_sars_cov2_image.png")
-display(img1, method = "raster")
+#Proteínas humanas que pueden ser relevantes para el SARS-CoV2
+proteins.table <- read.delim(file = "media-6.csv", sep = ';', )
+proteins.name <- data.frame(proteins.table[3][-1,])
+names(proteins.name) <- "gene"
 
-#Proteinas del Sars-Cov2
-proteins.sars_cov2.table <- read.delim(file = "string_protein_annotations_sars_cov2.tsv", sep = '\t')
-proteins.sars_cov2.name <- data.frame(proteins.sars_cov2.table[1])
+#Mapeo de las proteínas anteriores
+proteins_mapped <- string_db$map(proteins.name, "gene", removeUnmappedRows = TRUE)
 
-#Sars-Human Network
-img2 = readImage("string_sars_human_image.png")
-display(img2, method = "raster")
+#Representación de nuestra red
+png("proteins_network.png")
+proteins_network <- string_db$plot_network(proteins_mapped$STRING_id)
+dev.off()
 
-#Proteinas del Sars-Human
-proteins.sars_human.table <- read.delim(file = "string_protein_annotations_sars_human.tsv", sep = '\t')
-proteins.sars_human.name <- data.frame(proteins.sars_human.table[1])
+bet = betweenness(graph = proteins_network, normalized = T)
+clo = closeness(graph = proteins_network, mode="all", normalized=T)
+
+medias <- unlist(lapply(1:length(bet), FUN = function(x)(bet[x]+clo[x])/2))
+
+order(medias, decreasing = TRUE)
