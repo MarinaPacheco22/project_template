@@ -5,7 +5,7 @@ library(ggplot2)
 library(linkcomm)
 
 setwd("C:/Users/Usuario/OneDrive/Universidad/Curso 4/1º Cuatrimestre/Biología de Sistemas/Proyecto Sars-CoV2")
-
+setwd("D:/UMA/4 curso/Bioinformatica/Biologia de sistemas/Trabajo final/project_template-master")
 string_db <- STRINGdb$new(
   version="11",
   species=9606,
