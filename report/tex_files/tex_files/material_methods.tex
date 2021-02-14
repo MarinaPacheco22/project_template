@@ -1,0 +1,22 @@
+\section{Materiales y métodos}
+
+    \subsection{Genes Humanos:}
+        Como material, necesitamos los genes humanos que pueden estar relacionados con los genes del Sars-Cov2. Esos datos podemos obtenerlos mediante el estudio conjunto de la PPI del Sars-Cov2 y del Sars-Humano. Pero en este caso, hemos utilizado una tabla ya creada que aparece en \textbf{GO (Gene Ontology)} , que contiene diferente información sobre los genes humanos que pueden relacionarse con los genes del Sars-Cov2.
+        
+    \subsection{Manipulación:}    
+        Una vez tengamos los materiales, podemos proceder con la manipulación de los mismos. Sustancialmente, lo que vamos a realizar es un mapeado nuestros genes, para posteriormente obtener el gráfico de la red PPI de los mismos. Una vez tengamos la red, la simplificaremos eliminando los nodos que no se encuentran conectados. Posteriormente, vamos a realizar un análisis de la \textbf{centralidad}. La centralidad es una medida que determina la importancia de un nodo en la red, y se puede estudiar desde diferentes puntos de vista. Por un lado, está la \textbf{centralidad de intermediación (betweenness centrality)}, que se basa en los caminos cortos. Por otro lado, tenemos la \textbf{centralidad de proximidad (closeness centrality)} de un nodo, que se basa en la distancia de este con el resto de nodos. En nuestro caso, vamos a usar ambos análisis para determinar una selección de los 50 genes más relevantes.
+    
+    \subsection{GeneCards:}
+        Una vez llegados a este punto, volvemos a la tabla de datos inicial. Podemos observar que se incluye una columna con información acerca de enfermedades relacionadas con los genes. De manera que fijándonos en esos datos y mediante la ayuda de GeneCards, vamos a identificar las distintas enfermedades que están asociadas a nuestros genes. Cabe destacar, que la información ya dada en la tabla está incompleta, y para nuestros 50 genes, solo aparecen 19 de ellos con datos relativos a las enfermedades, de manera que vamos a obtener qué enfermedades están relacionadas con esos 19 genes. Una vez tengamos esta información, mediante la herramienta GeneCards ya mencionada, podemos adquirir los genes correspondientes a cada enfermedad. Para ver la información más clara, hemos creado una tabla Excel. 
+    
+       \includegraphics[width = \textwidth]{Images/tabla1.png}
+        
+        Para el objetivo de este proyecto, debemos seleccionar algunas enfermedades anteriores. Como se puede ver en la imagen de la tabla, hay enfermedades en las que solo está implicado el gen en cuestión, por lo que escogeremos 3 enfermedades que impliquen varios genes para poder hacer el análisis más eficaz. En nuestro caso, hemos seleccionado las siguientes enfermedades:
+        
+            \begin{itemize}
+            \item \textbf{Enanismo primordial osteodisplásico microcefálico, tipo II}
+            \item \textbf{Esquizofrenia}
+            \item \textbf{Microcefalia 3 primaria autosómica recesiva}
+            \end{itemize}
+
+        Una vez escogidas las enfermedades, continuamos con el siguiente paso. Para cada una de ellas, vamos a obtener la red PPI, para después ver la interacción de todos los genes que las forman en un único interactoma. Finalmente, mapearemos los 50 genes seleccionados al principio del proyecto en el interactoma de las enfermedades.

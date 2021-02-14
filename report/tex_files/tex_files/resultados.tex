@@ -1,0 +1,73 @@
+\newpage
+\section{Resultados}
+
+    \subsection{Genes Sars-Humano}
+        En este apartado vamos a mostrar las redes que hemos ido formando.
+        En primer lugar, observamos el interactoma de todos los genes relevantes para el SARS-CoV2. Esta red consta de 328 nodos (genes) y 1932 interacciones. 
+        
+        \includegraphics[width = \textwidth]{Images/protein_network.png}
+    
+        Como vemos, hay algunos genes que no están conectados con la componente conexa, por lo que prescindiremos de ellos. A continuación, procedemos al análisis de centralidad ya mencionado, y a la selección de los 50 genes mas relevantes según el estudio de esta medida. Este interactoma constará de 50 nodos y 140 interacciones.
+        
+        \includegraphics[width = \textwidth]{Images/protein_network_50.png}
+    
+        También vamos a observar el gráfico creado mediante el paquete iGraph, tal y como se ha explicado en clase. 
+        
+        \includegraphics[width = \textwidth]{Images/igraph_network_50.png}
+    
+    \subsection{}
+        A continuación, vamos a observar los interactomas de las distintas enfermedades:
+        
+        \begin{itemize}
+            \item \textbf{Enanismo primordial osteodisplásico microcefálico, tipo II}:
+        \end{itemize}
+            El interactoma consta de 15 nodos y 56 interacciones.
+            
+        Red string enanismo:
+        
+        \includegraphics[width = \textwidth]{Images/red_string_enanismo.jpg}
+        
+        Red enanismo:
+        
+        \includegraphics[width = \textwidth]{Images/red_enanismo.jpg}
+        
+        \begin{itemize}
+            \item \textbf{Esquizofrenia}
+        \end{itemize}
+            En cuanto a esta red, observamos 8 nodos y 10 interacciones.
+        
+        Red string esquizofrenia:
+        
+        \includegraphics[width = \textwidth]{Images/red_string_esquizo.jpg}
+        
+        Red esquizofrenia:
+        
+        \includegraphics[width = \textwidth]{Images/red_esquizo.jpg}
+            
+        \begin{itemize}
+            \item \textbf{Microcefalia 3 primaria autosómica recesiva}
+        \end{itemize}
+            El interactoma correspondiente a esta enfermedad está formado por 13 nodos y 69 interacciones.
+            
+        Red string microcefalia:
+        
+        \includegraphics[width = \textwidth]{Images/red_string_microcefalia.jpg}
+        
+        Red microcefalia:
+        
+        \includegraphics[width = \textwidth]{Images/red_microcefalia.jpg}   
+        
+    \subsection{Redes PPI enlazadas:}
+    
+        La primera red que vamos a observar contiene todos los genes de las 3 enfermedades. Podemos ver con distintas áreas de colores a que enfermedad pertenecen los nodos. En la leyenda aparecen los respectivos colores para cada enfermedad, siendo el rojo para el enanismo, el azul para la microcefalia y el verde para la esquizofrenia.
+        
+        \includegraphics[width = \textwidth]{Images/genes_enfermedades_conjuntas.jpg} 
+        
+        A continuación, hemos incluido al gráfico la selección de 50 genes que recopilamos al principio del proyecto (recordemos que estos genes son los de SARS-Humano relacionados con el SARS-CoV2). En este caso, El área de color rojo se relaciona con el enanismo, el área celeste con la microcefalia, el área verde con la esquizofrenia y finalmente el área morada, que incluye los 50 genes mencionados.
+        
+        \includegraphics[width = \textwidth]{Images/red_final.jpg} 
+        
+        
+        
+        
+       
