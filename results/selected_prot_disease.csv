@@ -1,0 +1,31 @@
+Gene;Disease;Associated genes
+BRD4;Nut Midline Carcinoma;NUTM1, BRD4, NSD3, ZNF532, MYC, EP300, KMT2C, SOX2, SF3B1, H2AC18
+BRD4;Exophthalmic Ophthalmoplegia;KCNJ18, POMC, BRD4
+PMPCB;Multiple Mitochondrial Dysfunctions Syndrome 6;PMPCB
+ETFA;Multiple Acyl-Coa Dehydrogenase Deficiency;ETFDH, ETFA, ETFB, FLAD1, ACADS, SLC25A32, SLC22A5, SLC22A5, SLC52A1, ACADVL, PRODH
+POLA1;Van Esch-O'driscoll Syndrome;POLA1
+POLA1;Pigmentary Disorder, Reticulate, With Systemic Manifestations, X-Linked;POLA1
+PCNT;Microcephalic Osteodysplastic Primordial Dwarfism, Type Ii;PCNT, RNU4ATAC, CNTLN, CENPJ, CEP152, CDK5RAP2, MCPH1, ASPM, CEP63, CMC4, STIL, RNF213, ATRIP, CETN3, TEX45, CEP135
+PRKACA;Pigmented Nodular Adrenocortical Disease, Primary, 4;PRKACA
+PRKACA;Fibrolamellar Carcinoma;PRKACA, DNAJB1, KRT7, FGFR1, NR0B2, SYP, FGFR2, MIR375, YAP1, KRT8
+PDE4DIP;Schizophrenia 1;SCZD1, DISC1, TSNAX-DISC1, PCNT, PDE4DIP, ITSN1, KALRN, NRG1, PDE4D, NDEL1
+PDE4DIP;Adult Pineoblastoma;ZNF789, ACOT6, PDE4DIP, DCHS2, NBPF26, SEC22B
+CDK5RAP2;Microcephaly 3, Primary, Autosomal Recessive;CDK5RAP2, MCPH1, WDR62, CEP152, ASPM, CENPJ, STIL, CEP135, RTTN, KNL1, MIR4528, CNTLN, CEP63, ZNF335
+AKAP9;Long Qt Syndrome 11;AKAP9, SNTA1, SCN4B, KCNE2, CAV3, KCNE1, KCNQ1, ANK2, KCNJ2, CACNA1C, KCNJ5 
+TBK1;Frontotemporal Dementia And/Or Amyotrophic Lateral Sclerosis 4;TBK1, KIF5A, PRPH, MGRN1, VPS54, BNIP1, TARDBP, TAF15
+TBK1;Encephalopathy, Acute, Infection-Induced 8;TBK1
+RAB7A;Charcot-Marie-Tooth Disease, Axonal, Type 2B;RAB7A, RAB7B, KIF1B, RILP, SPON1, MPZ, SPTLC1, GDAP1
+SRP72;Bone Marrow Failure Syndrome 1;SRP72
+SRP72;Anterior Spinal Artery Syndrome;SRP72, FGL2, NCBP1, PPP1R12A, TCHH, PRORP, F2, GABRR3
+EXOSC2;Short Stature, Hearing Loss, Retinitis Pigmentosa, And Distinctive Facies;EXOSC2
+EXOSC2;Premature Aging;PDGFRB, LMNA, EXOSC2, NR2C2, SOD2, TP63, STN1
+NUP214;Encephalopathy, Acute, Infection-Induced 9;NUP214
+NUP214;"Acute Myeloid Leukemia With T(6;9)(P23;Q34)";NUP214
+VPS11;Leukodystrophy, Hypomyelinating, 12;VPS11, C22orf23, ASZ1, PPP1CC, EEA1, RAB7B, RAB7A, PTPA, PPT2, NDP, RPS6KB1, STAU1
+VPS11;Cerebroretinal Microangiopathy With Calcifications And Cysts 1;CTC1, VPS11, STN1, PFAS
+NUP98;Childhood Acute Myeloid Leukemia;NSD1, NUP98, FLT3, NPM1, KDM5A, WT1, NSD3, DNMT3A, KIT, BAALC, CCDC28A, TET2, MECOM
+SIL1;Marinesco-Sjogren Syndrome;SIL1, INPP5K, OPA3, MIA2, CRYAA
+SIL1;Apraxia;SIL1, APTX, SETX, PNKP, NPHP1, MAPT, PIK3R5, ATM, PSEN1, XRCC1, AHI1
+HYOU1;Immunodeficiency 59 And Hypoglycemia;HYOU1
+HYOU1;Hypoxia;KMT2K, HIF1A, HIF3A, EGLN1, ARNT, HYOU1, VHL, HIF1AN, EPAS1, EGLN2, EGLN3, HILPDA, CITED2, TIGAR
+NDUFB9;Mitochondrial Complex I Deficiency, Nuclear Type 24;NDUFB9
